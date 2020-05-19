@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<!-- As a link -->
+<nav class="navbar navbar-light bg-light" id="navigation">
+
+  <a class="navbar-brand" href="#">Checkers</a>
+  <button id="undo"> Unselect</button>
+</nav>
+
+<!-- <button>Reset</button> -->
+
+<div id="containerTwo">
+
+  <div id="playerOneCard">
+    <span id="pOne">
+      <h6>Player 1 turn</h6>
+      <h6>Score:0</h6>
+    </span>
+    <h1>-----</h1>
+    <span id="pTwo">
+      <h6>Player 2 turn</h6>
+      <h6>Score:0</h6>
+    </span>
+  </div>
+
+
+</div>
+
+
+<div id="container">
+
+
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="1" data="odd-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="2" data="odd-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="3" data="odd-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="4" data="odd-from-top">
+  </div>
+
+  <div class="valid" value="5" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="6" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="7" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="8" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="9" data="odd-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="10" data="odd-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="11" data="odd-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="12" data="odd-from-top">
+  </div>
+
+  <div class="valid" value="13" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="14" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="15" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="16" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="17" data="odd-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="18" data="odd-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="19" data="odd-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="20" data="odd-from-top">
+  </div>
+
+  <div class="valid" value="21" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="22" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="23" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="24" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="25" data="odd-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="26" data="odd-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="27" data="odd-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="28" data="odd-from-top">
+  </div>
+
+  <div class="valid" value="29" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="30" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="31" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+  <div class="valid" value="32" data="even-from-top">
+  </div>
+
+  <div class="piece">
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+<script>
+
+  // function resetTurn(){
+  // var pieceIndex = [];
+  // var otherPieceIndex = [];
+  // var selected = false;
+  // var pieceVal;
+  // var spaceVal;
+  // var playerOne = true
+  // var playerTwo = false
+  // }
+
+  var parent = $("#container");
+  var divs = parent.children();
+
+  $(divs[1]).toggleClass("occupied")
+  $(divs[3]).toggleClass("occupied")
+  $(divs[5]).toggleClass("occupied")
+  $(divs[7]).toggleClass("occupied")
+  $(divs[8]).toggleClass("occupied")
+  $(divs[10]).toggleClass("occupied")
+  $(divs[12]).toggleClass("occupied")
+  $(divs[14]).toggleClass("occupied")
+  $(divs[17]).toggleClass("occupied")
+  $(divs[19]).toggleClass("occupied")
+  $(divs[21]).toggleClass("occupied")
+  $(divs[23]).toggleClass("occupied")
+
+  $(divs[24]).toggleClass("unOccupied")
+  $(divs[26]).toggleClass("unOccupied")
+  $(divs[28]).toggleClass("unOccupied")
+  $(divs[30]).toggleClass("unOccupied")
+  $(divs[33]).toggleClass("unOccupied")
+  $(divs[35]).toggleClass("unOccupied")
+  $(divs[37]).toggleClass("unOccupied")
+  $(divs[39]).toggleClass("unOccupied")
+
+  ////player 2
+  $(divs[62]).toggleClass("occupiedTwo")
+  $(divs[60]).toggleClass("occupiedTwo")
+  $(divs[58]).toggleClass("occupiedTwo")
+  $(divs[56]).toggleClass("occupiedTwo")
+  $(divs[55]).toggleClass("occupiedTwo")
+  $(divs[53]).toggleClass("occupiedTwo")
+  $(divs[51]).toggleClass("occupiedTwo")
+  $(divs[49]).toggleClass("occupiedTwo")
+  $(divs[46]).toggleClass("occupiedTwo")
+  $(divs[44]).toggleClass("occupiedTwo")
+  $(divs[42]).toggleClass("occupiedTwo")
+  $(divs[40]).toggleClass("occupiedTwo")
+
+  // first thing i want, select a piece,
+
+  var pieceIndex = [];
+  var otherPieceIndex = [];
+  var selected = false;
+  var pieceVal;
+  var spaceVal;
+  var playerOne = true;
+  var playerTwo = false;
+
+  function endTurnPlayerTwo() {
+    playerOne = true
+    playerTwo = false;
+    selected = false
+    pieceVal = 0;
+    spaceVal = 0;
+    otherPieceIndex = [];
+  }
+
+
+  function endTurnPlayerOne() {
+    playerOne = false
+    playerTwo = true;
+    selected = false
+    pieceVal = 0;
+    spaceVal = 0;
+    pieceIndex = [];
+  }
+
+
+  ///////
+
+  function additionalSkipOne() {
+    if ($(`[value='${pieceVal + 9}']`).attr("class") === "valid unOccupied") {
+      alert('spaceVal')
+    }
+  }
+
+
+  ///////
+
+  $(".valid").click(function () {
+    // alert(this.getAttribute("data"))
+    selected = true;
+    // making sure this only holds true for player one as long as its his turn
+
+    $("h6").css("color", "black; !important")
+
+    if (this.getAttribute("class") === 'valid occupied' && playerOne === true) {
+      $(this).toggleClass("selected");
+
+      // $(".occupiedTwo").css("pointer-events","none");
+      $(".occupied").css("pointer-events", "none");
+
+      pieceIndex.push(this)
+      pieceVal = parseInt(pieceIndex[0].getAttribute("value"));
+      return
+      //
+    }
+
+    //player one  moving a piece into an empty spot
+    if (selected === true && playerOne === true) {
+
+      spaceVal = parseInt(this.getAttribute("value"));
+
+      if (pieceVal + 5 === spaceVal) {
+        // alert('openspot')
+        $(`[value='${pieceVal + 5}']`).toggleClass("occupied");
+        $(`[value='${pieceVal + 5}']`).removeClass("unOccupied");
+        $(pieceIndex[0]).toggleClass("unOccupied");
+        $(pieceIndex[0]).removeClass("occupied");
+        $(pieceIndex[0]).removeClass("selected");
+
+      } else if (pieceVal + 4 === spaceVal) {
+
+        $(`[value='${pieceVal + 4}']`).toggleClass("occupied");
+        $(`[value='${pieceVal + 4}']`).removeClass("unOccupied");
+        $(pieceIndex[0]).toggleClass("unOccupied");
+        $(pieceIndex[0]).removeClass("occupied");
+        $(pieceIndex[0]).removeClass("selected");
+
+      } else if (pieceVal + 3 === spaceVal) {
+
+        $(`[value='${pieceVal + 3}']`).toggleClass("occupied");
+        $(`[value='${pieceVal + 3}']`).removeClass("unOccupied");
+        $(pieceIndex[0]).toggleClass("unOccupied");
+        $(pieceIndex[0]).removeClass("occupied");
+        $(pieceIndex[0]).removeClass("selected");
+      }
+
+      //player one skip logic
+
+      else {
+        //NEW ALGORITHM at 9 and 5, protect number 4 and kill number 5
+        // alert('not allowed')
+        if (pieceVal + 9 === spaceVal && $(`[value='${pieceVal + 5}']`).attr('class') === "valid occupiedTwo"
+          && this.getAttribute("class") === "valid unOccupied" && pieceIndex[0].getAttribute("data") === "odd-from-top") {
+          //  alert('fix hopefully')
+          // alert('first step')
+          $(pieceIndex[0]).toggleClass("unOccupied")
+          $(pieceIndex[0]).removeClass("occupied")
+          $(pieceIndex[0]).removeClass("selected")
+
+          $(`[value='${pieceVal + 9}']`).toggleClass("occupied")
+          $(`[value='${pieceVal + 9}']`).removeClass("unOccupied")
+          $(`[value='${pieceVal + 5}']`).toggleClass("unOccupied")
+          $(`[value='${pieceVal + 5}']`).removeClass("occupiedTwo")
+
+        }
+        if (pieceVal + 9 === spaceVal && $(`[value='${pieceVal + 4}']`).attr('class') === "valid occupiedTwo"
+          && this.getAttribute("class") === "valid unOccupied" && pieceIndex[0].getAttribute("data") === "even-from-top") {
+
+          //annoying bug fix. at 9 and 4, protect number 5 and kill number 4
+          // alert('fix hopefully')
+          alert('second step')
+          $(pieceIndex[0]).toggleClass("unOccupied")
+          $(pieceIndex[0]).removeClass("occupied")
+          $(pieceIndex[0]).removeClass("selected")
+
+          $(`[value='${pieceVal + 9}']`).toggleClass("occupied")
+          $(`[value='${pieceVal + 9}']`).removeClass("unOccupied")
+          $(`[value='${pieceVal + 4}']`).toggleClass("unOccupied")
+          $(`[value='${pieceVal + 4}']`).removeClass("occupiedTwo")
+        }
+        //
+        if (pieceVal + 7 === spaceVal && $(`[value='${pieceVal + 4}']`).attr('class') === "valid occupiedTwo"
+          && this.getAttribute("class") === "valid unOccupied" && pieceIndex[0].getAttribute("data") === "odd-from-top") {
+          // alert('fix hopefilly 7')
+          //     alert('third step 7 and 4 p1')
+          $(pieceIndex[0]).toggleClass("unOccupied")
+          $(pieceIndex[0]).removeClass("occupied")
+          $(pieceIndex[0]).removeClass("selected")
+
+          $(`[value='${pieceVal + 7}']`).toggleClass("occupied")
+          $(`[value='${pieceVal + 7}']`).removeClass("unOccupied")
+          $(`[value='${pieceVal + 4}']`).toggleClass("unOccupied")
+          $(`[value='${pieceVal + 4}']`).removeClass("occupiedTwo")
+        }
+
+        if (pieceVal + 7 === spaceVal && $(`[value='${pieceVal + 3}']`).attr('class') === "valid occupiedTwo"
+          && this.getAttribute("class") === "valid unOccupied" && pieceIndex[0].getAttribute("data") === "even-from-top") {
+          //save 4 and kill 3
+          // alert('fix too')
+          // alert('fourth step')
+          $(pieceIndex[0]).toggleClass("unOccupied")
+          $(pieceIndex[0]).removeClass("occupied")
+          $(pieceIndex[0]).removeClass("selected")
+
+          $(`[value='${pieceVal + 7}']`).toggleClass("occupied")
+          $(`[value='${pieceVal + 7}']`).removeClass("unOccupied")
+          $(`[value='${pieceVal + 3}']`).toggleClass("unOccupied")
+          $(`[value='${pieceVal + 3}']`).removeClass("occupiedTwo")
+        }
+      }
+
+      // end skipping function for player 1
+      endTurnPlayerOne()
+      $(".occupied").css("pointer-events", "none");
+      $(".unOccupied").css("pointer-events", "auto");
+      $(".occupiedTwo").css("pointer-events", "auto");
+      return
+    }
+    //player two selecting a piece
+
+    if (this.getAttribute("class") === 'valid occupiedTwo' && playerTwo === true) {
+
+      selected = true;
+      $(this).toggleClass("selectedTwo");
+      otherPieceIndex.push(this)
+
+      $(".occupiedTwo").css("pointer-events", "none");
+      // $(".occupied").css("pointer-events","none");
+      pieceVal = parseInt(otherPieceIndex[0].getAttribute("value"));
+      return;
+      //
+    }
+    // p2 landing a selected piece into a new spot
+    if (selected === true && playerTwo === true) {
+
+      spaceVal = parseInt(this.getAttribute("value"));
+
+      if (pieceVal - 5 === spaceVal) {
+        $(`[value='${pieceVal - 5}']`).toggleClass("occupiedTwo");
+        $(`[value='${pieceVal - 5}']`).removeClass("unOccupied");
+        $(otherPieceIndex[0]).toggleClass("unOccupied");
+        $(otherPieceIndex[0]).removeClass("occupiedTwo");
+        $(otherPieceIndex[0]).removeClass("selectedTwo");
+        otherPieceIndex = [];
+      }
+      else if (pieceVal - 4 === spaceVal) {
+        $(`[value='${pieceVal - 4}']`).toggleClass("occupiedTwo");
+        $(`[value='${pieceVal - 4}']`).removeClass("unOccupied");
+        $(otherPieceIndex[0]).toggleClass("unOccupied");
+        $(otherPieceIndex[0]).removeClass("occupiedTwo");
+        $(otherPieceIndex[0]).removeClass("selectedTwo");
+        otherPieceIndex = [];
+      }
+      else if (pieceVal - 3 === spaceVal) {
+        // alert('openspot')
+        $(`[value='${pieceVal - 3}']`).toggleClass("occupiedTwo");
+        $(`[value='${pieceVal - 3}']`).removeClass("unOccupied");
+        $(otherPieceIndex[0]).toggleClass("unOccupied");
+        $(otherPieceIndex[0]).removeClass("occupiedTwo");
+        $(otherPieceIndex[0]).removeClass("selectedTwo");
+        otherPieceIndex = [];
+      }
+      //
+      //player two skipping
+      else {
+
+        if (pieceVal - 9 === spaceVal && $(`[value='${pieceVal - 5}']`).attr('class') === "valid occupied"
+          && this.getAttribute("class") === "valid unOccupied" && otherPieceIndex[0].getAttribute("data") === "even-from-top") {
+
+          // alert('first step p2')
+          $(otherPieceIndex[0]).toggleClass("unOccupied")
+          $(otherPieceIndex[0]).removeClass("occupiedTwo")
+          $(otherPieceIndex[0]).removeClass("selectedTwo")
+
+          $(`[value='${pieceVal - 9}']`).toggleClass("occupiedTwo")
+          $(`[value='${pieceVal - 9}']`).removeClass("unOccupied")
+          $(`[value='${pieceVal - 5}']`).toggleClass("unOccupied")
+          $(`[value='${pieceVal - 5}']`).removeClass("occupied")
+        }
+        if (pieceVal - 9 === spaceVal && $(`[value='${pieceVal - 4}']`).attr('class') === "valid occupied"
+          && this.getAttribute("class") === "valid unOccupied" && otherPieceIndex[0].getAttribute("data") === "odd-from-top") {
+          // alert('2nd step p2')
+          $(otherPieceIndex[0]).toggleClass("unOccupied")
+          $(otherPieceIndex[0]).removeClass("occupiedTwo")
+          $(otherPieceIndex[0]).removeClass("selectedTwo")
+
+          $(`[value='${pieceVal - 9}']`).toggleClass("occupiedTwo")
+          $(`[value='${pieceVal - 9}']`).removeClass("unOccupied")
+          $(`[value='${pieceVal - 4}']`).toggleClass("unOccupied")
+          $(`[value='${pieceVal - 4}']`).removeClass("occupied")
+        }
+
+        if (pieceVal - 7 === spaceVal && $(`[value='${pieceVal - 4}']`).attr('class') === "valid occupied"
+          && this.getAttribute("class") === "valid unOccupied" && otherPieceIndex[0].getAttribute("data") === "even-from-top") {
+
+          // alert('3rd step p2')
+          $(otherPieceIndex[0]).toggleClass("unOccupied")
+          $(otherPieceIndex[0]).removeClass("occupiedTwo")
+          $(otherPieceIndex[0]).removeClass("selectedTwo")
+
+          $(`[value='${pieceVal - 7}']`).toggleClass("occupiedTwo")
+          $(`[value='${pieceVal - 7}']`).removeClass("unOccupied")
+          $(`[value='${pieceVal - 4}']`).toggleClass("unOccupied")
+          $(`[value='${pieceVal - 4}']`).removeClass("occupied")
+        }
+        if (pieceVal - 7 === spaceVal && $(`[value='${pieceVal - 3}']`).attr('class') === "valid occupied"
+          && this.getAttribute("class") === "valid unOccupied" && otherPieceIndex[0].getAttribute("data") === "odd-from-top") {
+          // alert('4th step p2')
+          $(otherPieceIndex[0]).toggleClass("unOccupied")
+          $(otherPieceIndex[0]).removeClass("occupiedTwo")
+          $(otherPieceIndex[0]).removeClass("selectedTwo")
+
+          $(`[value='${pieceVal - 7}']`).toggleClass("occupiedTwo")
+          $(`[value='${pieceVal - 7}']`).removeClass("unOccupied")
+          $(`[value='${pieceVal - 3}']`).toggleClass("unOccupied")
+          $(`[value='${pieceVal - 3}']`).removeClass("occupied")
+        }
+      }
+
+      endTurnPlayerTwo()
+
+      $(".occupied").css("pointer-events", "auto");
+      $(".unOccupied").css("pointer-events", "auto");
+      $(".occupiedTwo").css("pointer-events", "none");
+      return
+    }
+  })
+
+//whats left,
+
+//player one
+
+// anything with 9 is going towards the right
+// whenever theres a skip at spots 9 and 4, its an even row counting from the top
+// whenever theres a skip at spots 9 and 5, its an odd row counting from the top
+
+// anything with 7 is going towards the left
+// whenever theres a skip at spots 7 and 4, its an odd row counting from the top
+// whenever theres a skip at spots 7 and 3, its an even row counting from the top
+
+//player two 
+
+//anything going to the left is 9
+// anything going to the right is 7
+
+// whenever theres a skip at spots 7 and 4, kill 4.its an even row counting from the top
+// whenever theres a skip at spots 7 and 3, kill 3. its an odd row counting from the top
+
+// whenever theres a skip at spots 9 and 5, kill 5.its an even row counting from the top
+// whenever theres a skip at spots 9 and 4, kill 4.its an even row counting from the top
+
+//1. make logic for kings, being able to move forward or backwards.
+
+//2. handle logic for additional skips available on one turn.
+
+
+//3. handle logjam, if a player cant move because he is impeded by opposing players pieces,
+// therefore loses the game.
+
+//4. fix error of game freezing when selecting inelligible spot to move.
+
+//5. have option to unselect a piece
+
+</script>
+
+</body>
+
+</html>
